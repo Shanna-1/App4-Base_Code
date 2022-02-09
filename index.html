@@ -25,7 +25,129 @@ blah, blah, blah, blah
 
    <head> 
       
-	   PUT YOUR OLD CODE IN HERE
+	   <title>Hello World</title>  
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="stylesheet" href="w3.css">
+      <link rel="stylesheet" href="w3-colors-flat.css">
+   </head> 
+
+
+<script>
+        var chickenpox_count = 0;
+        var measles_count = 0;
+
+
+        function chickenpoxAdd(){
+            chickenpox_count = chickenpox_count + 1;
+		alert(chickenpox_count);
+
+        }
+
+        function measlesAdd(){
+            measles_count = measles_count + 1;
+		alert(measles_count);
+        }
+	var resultText = document.getElementById("results");
+  </script>
+
+
+
+<style>	
+.body {
+     margin: 0em;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    overflow-y: auto;
+    z-index: 0;
+    background-color: hsl(0,0%,100%);
+}
+
+  .page:target {
+    left: 0vw;
+    z-index: 1;
+}
+</style>
+	
+<style>
+       	img, object{measlesandchickenpox.jpg
+            	max-height:90%;
+        		max-width:90%;
+        	}
+</style>
+
+<body>
+<div id="header" class="w3-container w3-flat-carrot">
+	<h1>Chickenpox or Smallpox?</h1>
+</div>
+	
+<div id="content" class="w3-container">
+	<p>Are you feeling like you might have the chickenpox but wonder if it is measles. Answer a few short questions to find out!</p>
+	
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+
+<div class="page" id="one">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Where are your reddish spots?</h1>
+		<a href="#two"  onclick="chickenpoxAdd(+ 1);" class="w3-btn w3-black">Stomach, chest, face, and back</a>
+		<a href="#two"  onclick="measlesAdd(+ 1);" class="w3-btn w3-black">All over, but clumped around the forehead and inside the mouth</a>
+	</div> 
+	
+<div class="page" id="two">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Are the spots turning into blisters?</h1>
+		<a href="#three"  onclick="chickenpoxAdd(+ 1);" class="w3-btn w3-black">Yes</a>
+		<a href="#two"  onclick="measlesAdd(+ 1);" class="w3-btn w3-black">No</a>
+	</div> 
+	
+<div class="page" id="three">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Are you fatigued?</h1>
+		<a href="#four"  onclick="chickenpoxAdd(+ 1);" class="w3-btn w3-black">Yes</a>
+		<a href="#four"  onclick="measlesAdd(+ 1);" class="w3-btn w3-black">No</a>
+	</div> 
+	
+<div class="page" id="four">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Do you have red, inflamed eyes?</h1>
+		<a href="#five"  onclick="chickenpoxAdd(+ 1);" class="w3-btn w3-black">No</a>
+		<a href="#five"  onclick="measlesAdd(+ 1);" class="w3-btn w3-black">Yes</a>
+	</div> 	
+	
+<div class="page" id="five">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Do you have a hacking cough or sore throat?</h1>
+		<a href="#six"  onclick="chickenpoxAdd(+ 1);" class="w3-btn w3-black">No</a>
+		<a href="#six"  onclick="measlesAdd(+ 1);" class="w3-btn w3-black">Yes</a>
+	</div> 	
+	
+<div class="page" id="six">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Do you have a runny nose?</h1>
+		<a href="#results"  onclick="chickenpoxAdd(+ 1);" class="w3-btn w3-black">Yes</a>
+		<a href="#results"  onclick="measlesAdd(+ 1);" class="w3-btn w3-black">No</a>
+	</div> 		
+<div class="page" id="results">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Results</h1>
+		<p id="results">If your reddish spots are on your stomach, chest, face, and back, spots are turning into blisters, fatigued and have a runny nose you probably have chickenpox. If your spots are clumped around your forehead in your mouth, have red inflamed eyes, and have hacking cough or sore throat you probably have the measles.</p>
+	</div>
+
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>DIY!</p>
+</footer>
 	   
    </body>
 </html>
+<!-- added the code from previous app, added text in lines 94 and 95, copied and pasted lines 91 through 96 and changed the text to make the next questions and answers, did the same for 105 to 110, did same for 113 to 118, did same to 120 to 125, did same to 127 to 132-->
+<!-- in the functions changed anything with allergy to chickenpox and anything with cold to measles, added image-->
